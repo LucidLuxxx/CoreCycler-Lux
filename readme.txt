@@ -1,3 +1,8 @@
+This is a modified version of sp00n's corecycler program. this is corecycler version 10.0.0alpha5. I am developing a GUI
+for corecycler. its not ready yet. 
+
+
+
 --------------
 - CORECYCLER -
 --------------
