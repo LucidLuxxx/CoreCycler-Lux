@@ -1,5 +1,7 @@
-This is a modified version of sp00n's corecycler program. this is corecycler version 10.0.0alpha5. I am developing a GUI
-for corecycler. its not ready yet. 
+This is a modified version of sp00n's corecycler program. this is corecycler version 10.0.0alpha5. I am developing a GUI for corecycler. its not ready yet. To test it out with what I have done so far, install python, be sure to check the box to add python to environment path during install, then double click main.py. 
+
+main.py imports all the other python files when you run it so it's basically combining all the python files into one. after I finish the logging section and a few other things, I will be compiling it into an executable .exe file that will run without python having to be installed. 
+
 
 
 
