@@ -5,15 +5,783 @@ import subprocess
 import os
 import glob
 from PyQt5 import QtWidgets, QtCore
-from prime95 import Prime95Settings
-from linpack import LinpackSettings
-from yCruncher import YCruncherSettings
-from aida64 import Aida64Settings
-
 from CoreCycler import Ui_CoreCycler  # Import generated GUI class
 
 # ===========================================
-# GeneralSettings Class (from General.py)
+# LinpackSettings Class (originally from linpack.py)
+# ===========================================
+class LinpackSettings:
+    def __init__(self, config_file, config, app):
+        """
+        Initialize Linpack settings with config file and application instance.
+        
+        Args:
+            config_file (str): Path to the config.ini file
+            config (configparser.ConfigParser): ConfigParser instance
+            app (CoreCyclerApp): Reference to the main application instance
+        """
+        self.config_file = config_file
+        self.config = config
+        self.app = app
+        self.setup_linpack_settings()
+
+    def setup_linpack_settings(self):
+        """Set up all Linpack-related settings and connect signals."""
+        if "Linpack" not in self.config:
+            self.config["Linpack"] = {}
+
+        self.setup_version_settings()
+        self.setup_mode_settings()
+        self.setup_memory_settings()  # New method for comboBox_7
+
+    def setup_version_settings(self):
+        """Set up comboBox_5 for the 'version' setting in [Linpack]."""
+        self.version_map = {
+            0: "2018",
+            1: "2019",
+            2: "2021",
+            3: "2024"
+        }
+        
+        if self.app.comboBox_5.count() == 0:
+            for version in self.version_map.values():
+                self.app.comboBox_5.addItem(version)
+        
+        current_version = self.config["Linpack"].get("memory", "2018")
+        reverse_map = {v: k for k, v in self.version_map.items()}
+        if current_version in reverse_map:
+            self.app.comboBox_5.setCurrentIndex(reverse_map[current_version])
+        else:
+            self.app.comboBox_5.setCurrentIndex(0)
+        
+        self.app.comboBox_5.currentIndexChanged.connect(self.update_version)
+
+    def setup_mode_settings(self):
+        """Set up comboBox_6 for the 'mode' setting in [Linpack]."""
+        self.mode_map = {
+            0: "Medium",
+            1: "Slowest",
+            2: "Slow",
+            3: "Fast",
+            4: "Fastest"
+        }
+        
+        if self.app.comboBox_6.count() == 0:
+            for mode in self.mode_map.values():
+                self.app.comboBox_6.addItem(mode)
+        
+        current_mode = self.config["Linpack"].get("mode", "Medium")
+        reverse_map = {v: k for k, v in self.mode_map.items()}
+        if current_mode in reverse_map:
+            self.app.comboBox_6.setCurrentIndex(reverse_map[current_mode])
+        else:
+            self.app.comboBox_6.setCurrentIndex(0)
+        
+        self.app.comboBox_6.currentIndexChanged.connect(self.update_mode)
+
+    def setup_memory_settings(self):
+        """Set up comboBox_7 for the 'memory' setting in [Linpack]."""
+        # Define possible Linpack memory options
+        self.memory_map = {
+            0: "2GB",
+            1: "100MB",
+            2: "250MB",
+            3: "500MB",
+            4: "750MB",
+            5: "1GB",
+            6: "4GB",
+            7: "6GB",
+            8: "30GB"
+        }
+        
+        # Populate comboBox_7 if it’s empty
+        if self.app.comboBox_7.count() == 0:
+            for memory in self.memory_map.values():
+                self.app.comboBox_7.addItem(memory)
+        
+        # Set the current selection based on config
+        current_memory = self.config["Linpack"].get("memory", "2GB")  # Default to 2GB
+        reverse_map = {v: k for k, v in self.memory_map.items()}
+        if current_memory in reverse_map:
+            self.app.comboBox_7.setCurrentIndex(reverse_map[current_memory])
+        else:
+            self.app.comboBox_7.setCurrentIndex(0)  # Default to 2GB
+        
+        # Connect the comboBox_7 signal to update the config
+        self.app.comboBox_7.currentIndexChanged.connect(self.update_memory)
+
+    def update_version(self, index):
+        """Update the 'version' setting in [Linpack] based on comboBox_5 selection."""
+        selected_version = self.version_map.get(index, "2018")
+        self.update_config("Linpack", "version", selected_version)
+
+    def update_mode(self, index):
+        """Update the 'mode' setting in [Linpack] based on comboBox_6 selection."""
+        selected_mode = self.mode_map.get(index, "Medium")
+        self.update_config("Linpack", "mode", selected_mode)
+
+    def update_memory(self, index):
+        """Update the 'memory' setting in [Linpack] based on comboBox_7 selection."""
+        selected_memory = self.memory_map.get(index, "2GB")  # Default to 2GB if index is invalid
+        self.update_config("Linpack", "memory", selected_memory)
+
+    def update_config(self, section, option, value):
+        """Update a setting in the specified section of config.ini and save it."""
+        try:
+            if section not in self.config:
+                self.config[section] = {}
+            self.config[section][option] = str(value)
+            with open(self.config_file, 'w') as configfile:
+                self.config.write(configfile)
+            print(f"Updated config.ini: [{section}] {option} = {value}")
+        except Exception as e:
+            print(f"Error writing to config.ini: {e}")
+            QtWidgets.QMessageBox.critical(self.app, "Error", f"Failed to update config: {str(e)}")
+
+# ===========================================
+# Prime95Settings Class (originally from prime95.py)
+# ===========================================
+class Prime95Settings:
+    def __init__(self, config_file, config, app):
+        """
+        Initialize Prime95 settings with config file and application instance.
+        
+        Args:
+            config_file (str): Path to the config.ini file
+            config (configparser.ConfigParser): ConfigParser instance
+            app (CoreCyclerApp): Reference to the main application instance
+        """
+        self.config_file = config_file
+        self.config = config
+        self.app = app
+        self.setup_prime95_settings()
+
+    def setup_prime95_settings(self):
+        """Set up all Prime95-related settings and connect signals."""
+        if "Prime95" not in self.config:
+            self.config["Prime95"] = {}
+        if "Prime95Custom" not in self.config:
+            self.config["Prime95Custom"] = {}
+
+        self.setup_mode_settings()
+        self.setup_fft_size_settings()
+        self.setup_checkbox_settings()
+        self.setup_custom_torture_settings()
+        self.setup_cpu_support_settings()
+
+    def setup_mode_settings(self):
+        """Set up comboBox_2 for the 'mode' setting."""
+        self.mode_map = {
+            0: "SSE",
+            1: "AVX",
+            2: "AVX2",
+            3: "AVX512"
+        }
+        if self.app.comboBox_2.count() == 0:
+            for mode in self.mode_map.values():
+                self.app.comboBox_2.addItem(mode)
+        current_mode = self.config["Prime95"].get("mode", "SSE")
+        reverse_map = {v: k for k, v in self.mode_map.items()}
+        if current_mode in reverse_map and current_mode != "custom":
+            self.app.comboBox_2.setCurrentIndex(reverse_map[current_mode])
+        elif current_mode == "custom":
+            self.app.comboBox_2.setCurrentIndex(0)
+        else:
+            self.app.comboBox_2.setCurrentIndex(0)
+        self.app.comboBox_2.currentIndexChanged.connect(self.update_mode)
+
+    def setup_fft_size_settings(self):
+        """Set up comboBox_8 and lineEdit_4 for the 'fftSize' setting."""
+        self.fft_size_map = {
+            0: "Huge",
+            1: "Smallest",
+            2: "Small",
+            3: "Large",
+            4: "Moderate",
+            5: "Heavy",
+            6: "HeavyShort",
+            7: "All",
+            8: "Custom"
+        }
+        if self.app.comboBox_8.count() == 0:
+            for fft_size in self.fft_size_map.values():
+                self.app.comboBox_8.addItem(fft_size)
+        current_fft_size = self.config["Prime95"].get("fftSize", "Small")
+        reverse_map = {v: k for k, v in self.fft_size_map.items()}
+        if current_fft_size in reverse_map:
+            self.app.comboBox_8.setCurrentIndex(reverse_map[current_fft_size])
+            if current_fft_size != "Custom":
+                self.app.lineEdit_4.setText("")
+        else:
+            self.app.comboBox_8.setCurrentIndex(8)
+            self.app.lineEdit_4.setText(current_fft_size)
+        self.app.comboBox_8.currentIndexChanged.connect(self.update_fft_size_from_combobox)
+        self.app.lineEdit_4.textChanged.connect(self.update_fft_size_from_lineedit)
+
+    def setup_checkbox_settings(self):
+        """Set up checkBox_11 to override 'mode' to 'custom' when checked."""
+        current_mode = self.config["Prime95"].get("mode", "SSE")
+        self.app.checkBox_11.setChecked(current_mode == "custom")
+        self.app.checkBox_11.stateChanged.connect(self.update_mode_from_checkbox)
+
+    def setup_custom_torture_settings(self):
+        """Set up lineEdit_7, lineEdit_8, lineEdit_9, and lineEdit_10 for custom Prime95 settings."""
+        min_fft = self.config["Prime95Custom"].get("mintorturefft", "4")
+        max_fft = self.config["Prime95Custom"].get("maxtorturefft", "8192")
+        torture_mem = self.config["Prime95Custom"].get("torturemem", "0")
+        torture_time = self.config["Prime95Custom"].get("torturetime", "1")
+        self.app.lineEdit_7.setText(min_fft)
+        self.app.lineEdit_8.setText(max_fft)
+        self.app.lineEdit_9.setText(torture_mem)
+        self.app.lineEdit_10.setText(torture_time)
+        self.app.lineEdit_7.textChanged.connect(lambda text: self.update_custom_setting("mintorturefft", text))
+        self.app.lineEdit_8.textChanged.connect(lambda text: self.update_custom_setting("maxtorturefft", text))
+        self.app.lineEdit_9.textChanged.connect(lambda text: self.update_custom_setting("torturemem", text))
+        self.app.lineEdit_10.textChanged.connect(lambda text: self.update_custom_setting("torturetime", text))
+
+    def setup_cpu_support_settings(self):
+        """Set up radio buttons to control CPU support settings in a mutually exclusive group."""
+        self.cpu_support_group = QtWidgets.QButtonGroup(self.app)
+        
+        if hasattr(self.app, "radioButton_23"):
+            self.cpu_support_group.addButton(self.app.radioButton_23, id=0)
+        else:
+            print("Warning: radioButton_23 not found in the UI")
+
+        if hasattr(self.app, "radioButton_6"):
+            self.cpu_support_group.addButton(self.app.radioButton_6, id=1)
+        else:
+            print("Warning: radioButton_6 not found in the UI")
+
+        if hasattr(self.app, "radioButton_7"):
+            self.cpu_support_group.addButton(self.app.radioButton_7, id=2)
+        else:
+            print("Warning: radioButton_7 not found in the UI")
+
+        if hasattr(self.app, "radioButton_8"):
+            self.cpu_support_group.addButton(self.app.radioButton_8, id=3)
+        else:
+            print("Warning: radioButton_8 not found in the UI")
+
+        if hasattr(self.app, "radioButton_9"):
+            self.cpu_support_group.addButton(self.app.radioButton_9, id=4)
+        else:
+            print("Warning: radioButton_9 not found in the UI")
+
+        self.cpu_support_group.buttonToggled.connect(self.update_cpu_support_config)
+        self.set_initial_cpu_support_state()
+
+    def set_initial_cpu_support_state(self):
+        """Set the initial state of the radio buttons based on the config."""
+        avx = self.config["Prime95Custom"].getboolean("cpusupportsavx", fallback=False)
+        avx2 = self.config["Prime95Custom"].getboolean("cpusupportsavx2", fallback=False)
+        fma3 = self.config["Prime95Custom"].getboolean("cpusupportsfma3", fallback=False)
+        avx512 = self.config["Prime95Custom"].getboolean("cpusupportsavx512", fallback=False)
+
+        if avx512 and fma3 and avx2 and avx:
+            if hasattr(self.app, "radioButton_9"):
+                self.app.radioButton_9.setChecked(True)
+        elif fma3 and avx2 and avx:
+            if hasattr(self.app, "radioButton_8"):
+                self.app.radioButton_8.setChecked(True)
+        elif avx2 and avx:
+            if hasattr(self.app, "radioButton_7"):
+                self.app.radioButton_7.setChecked(True)
+        elif avx:
+            if hasattr(self.app, "radioButton_6"):
+                self.app.radioButton_6.setChecked(True)
+        else:
+            if hasattr(self.app, "radioButton_23"):
+                self.app.radioButton_23.setChecked(True)
+
+    def update_cpu_support_config(self, button, checked):
+        """Update CPU support settings in [Prime95Custom] based on the selected radio button."""
+        if not checked:
+            return
+
+        button_id = self.cpu_support_group.id(button)
+        
+        if button_id == 0:  # radioButton_23 (SSE)
+            settings = {
+                "cpusupportsavx": "0",
+                "cpusupportsavx2": "0",
+                "cpusupportsfma3": "0",
+                "cpusupportsavx512": "0"
+            }
+        elif button_id == 1:  # radioButton_6 (AVX)
+            settings = {
+                "cpusupportsavx": "1",
+                "cpusupportsavx2": "0",
+                "cpusupportsfma3": "0",
+                "cpusupportsavx512": "0"
+            }
+        elif button_id == 2:  # radioButton_7 (AVX2)
+            settings = {
+                "cpusupportsavx": "1",
+                "cpusupportsavx2": "1",
+                "cpusupportsfma3": "0",
+                "cpusupportsavx512": "0"
+            }
+        elif button_id == 3:  # radioButton_8 (FMA3)
+            settings = {
+                "cpusupportsavx": "1",
+                "cpusupportsavx2": "1",
+                "cpusupportsfma3": "1",
+                "cpusupportsavx512": "0"
+            }
+        elif button_id == 4:  # radioButton_9 (AVX512)
+            settings = {
+                "cpusupportsavx": "1",
+                "cpusupportsavx2": "1",
+                "cpusupportsfma3": "1",
+                "cpusupportsavx512": "1"
+            }
+        else:
+            return
+
+        for option, value in settings.items():
+            self.update_config("Prime95Custom", option, value)
+        print(f"Updated CPU support settings for button {button_id} in [Prime95Custom]")
+
+    def update_mode(self, index):
+        """Update the 'mode' setting based on comboBox_2 selection, if checkBox_11 is unchecked."""
+        if not self.app.checkBox_11.isChecked():
+            selected_mode = self.mode_map.get(index, "SSE")
+            self.update_config("Prime95", "mode", selected_mode)
+
+    def update_mode_from_checkbox(self, state):
+        """Update the 'mode' setting based on checkBox_11 state."""
+        if state:
+            self.update_config("Prime95", "mode", "custom")
+        else:
+            selected_index = self.app.comboBox_2.currentIndex()
+            selected_mode = self.mode_map.get(selected_index, "SSE")
+            self.update_config("Prime95", "mode", selected_mode)
+
+    def update_fft_size_from_combobox(self, index):
+        """Update the 'fftSize' setting based on comboBox_8 selection."""
+        selected_fft_size = self.fft_size_map.get(index, "Small")
+        if selected_fft_size == "Custom":
+            custom_value = self.app.lineEdit_4.text().strip()
+            self.update_config("Prime95", "fftSize", custom_value if custom_value else "Custom")
+        else:
+            self.update_config("Prime95", "fftSize", selected_fft_size)
+            self.app.lineEdit_4.setText("")
+
+    def update_fft_size_from_lineedit(self, text):
+        """Update 'fftSize' from lineEdit_4 input when comboBox_8 is on Custom."""
+        if self.app.comboBox_8.currentIndex() == 8:
+            value = text.strip()
+            self.update_config("Prime95", "fftSize", value if value else "Custom")
+
+    def update_custom_setting(self, option, text):
+        """Update a custom setting in [Prime95Custom] regardless of checkBox_11 state."""
+        value = text.strip()
+        if value:
+            try:
+                int(value)
+                self.update_config("Prime95Custom", option, value)
+            except ValueError:
+                print(f"Invalid input for {option}: {value} (must be an integer)")
+                QtWidgets.QMessageBox.warning(self.app, "Invalid Input", f"{option} must be an integer.")
+        else:
+            defaults = {
+                "mintorturefft": "4",
+                "maxtorturefft": "8192",
+                "torturemem": "0",
+                "torturetime": "1"
+            }
+            self.update_config("Prime95Custom", option, defaults[option])
+            getattr(self.app, f"lineEdit_{7 + list(defaults.keys()).index(option)}").setText(defaults[option])
+
+    def update_config(self, section, option, value):
+        """Update a setting in the specified section of config.ini and save it."""
+        try:
+            if section not in self.config:
+                self.config[section] = {}
+            self.config[section][option] = str(value)
+            with open(self.config_file, 'w') as configfile:
+                self.config.write(configfile)
+            print(f"Updated config.ini: [{section}] {option} = {value}")
+        except Exception as e:
+            print(f"Error writing to config.ini: {e}")
+            QtWidgets.QMessageBox.critical(self.app, "Error", f"Failed to update config: {str(e)}")
+
+# ===========================================
+# YCruncherSettings Class (originally from ycruncher.py)
+# ===========================================
+class YCruncherSettings:
+    def __init__(self, config_file, config, app):
+        """
+        Initialize yCruncher settings with config file and application instance.
+        
+        Args:
+            config_file (str): Path to the config.ini file
+            config (configparser.ConfigParser): ConfigParser instance
+            app (CoreCyclerApp): Reference to the main application instance
+        """
+        self.config_file = config_file
+        self.config = config
+        self.app = app
+        self.setup_yCruncher_settings()
+
+    def setup_yCruncher_settings(self):
+        """Set up all yCruncher-related settings and connect signals."""
+        if "yCruncher" not in self.config:
+            self.config["yCruncher"] = {}
+
+        self.setup_mode_settings()
+        self.setup_tests_settings()  # For checkBox_29 to checkBox_38
+        self.setup_old_tests_settings()  # New method for checkBox_39 to checkBox_47
+        self.setup_test_duration_settings()
+        self.setup_logging_wrapper_settings()
+        self.setup_memory_settings()
+
+    def setup_mode_settings(self):
+        """Set up radio buttons (10-22) for the 'mode' setting in [yCruncher]."""
+        self.mode_map = {
+            10: "04-P4P",
+            11: "05-A64 ~ Kasumi",
+            12: "08-NHM ~ Ushio",
+            13: "11-SNB ~ Hina",
+            14: "12-BD2 ~ Miyu",
+            15: "13-HSW ~ Airi",
+            16: "14-BDW ~ Kurumi",
+            17: "17-SKX ~ Kotori",
+            18: "17-ZN1 ~ Yukina",
+            19: "18-CNL ~ Shinoa",
+            20: "19-ZN2 ~ Kagari",
+            21: "22-ZN4 ~ Kizuna",
+            22: "24-ZN5 ~ Komari"
+        }
+        
+        self.mode_group = QtWidgets.QButtonGroup(self.app)
+        
+        for i in range(10, 23):
+            rb_name = f"radioButton_{i}"
+            if hasattr(self.app, rb_name):
+                self.mode_group.addButton(getattr(self.app, rb_name), id=i)
+            else:
+                print(f"Warning: {rb_name} not found in the UI")
+        
+        self.mode_group.buttonToggled.connect(self.update_mode_config)
+        self.set_initial_mode_state()
+
+    def setup_tests_settings(self):
+        """Set up checkboxes (29-38) for the 'tests' setting in [yCruncher] when radioButton_4 is selected."""
+        self.tests_map = {
+            29: "BKT",
+            30: "BBP",
+            31: "SFT",
+            32: "SFTv4",
+            33: "SNT",
+            34: "SVT",
+            35: "FFT",
+            36: "FFTv4",
+            37: "N63",
+            38: "VT3"
+        }
+        
+        for i in range(29, 39):
+            cb_name = f"checkBox_{i}"
+            if hasattr(self.app, cb_name):
+                checkbox = getattr(self.app, cb_name)
+                checkbox.stateChanged.connect(self.update_tests_config)
+            else:
+                print(f"Warning: {cb_name} not found in the UI")
+        
+        self.set_initial_tests_state()
+
+    def setup_old_tests_settings(self):
+        """Set up checkboxes (39-47) for the 'tests' setting in [yCruncher] when radioButton_5 is selected."""
+        self.old_tests_map = {
+            39: "BKT",
+            40: "BBP",
+            41: "SFT",
+            42: "FFT",
+            43: "N32",
+            44: "N64",
+            45: "HNT",
+            46: "VST",
+            47: "C17"
+        }
+        
+        for i in range(39, 48):
+            cb_name = f"checkBox_{i}"
+            if hasattr(self.app, cb_name):
+                checkbox = getattr(self.app, cb_name)
+                checkbox.stateChanged.connect(self.update_old_tests_config)
+            else:
+                print(f"Warning: {cb_name} not found in the UI")
+        
+        self.set_initial_old_tests_state()
+
+    def set_initial_tests_state(self):
+        """Set the initial state of the checkboxes (29-38) based on the config."""
+        current_tests = self.config["yCruncher"].get("tests", "")
+        selected_tests = [test.strip() for test in current_tests.split(",") if test.strip()]
+        
+        for cb_id, test in self.tests_map.items():
+            cb_name = f"checkBox_{cb_id}"
+            if hasattr(self.app, cb_name):
+                checkbox = getattr(self.app, cb_name)
+                checkbox.setChecked(test in selected_tests)
+
+    def set_initial_old_tests_state(self):
+        """Set the initial state of the checkboxes (39-47) based on the config."""
+        current_tests = self.config["yCruncher"].get("tests", "")
+        selected_tests = [test.strip() for test in current_tests.split(",") if test.strip()]
+        
+        for cb_id, test in self.old_tests_map.items():
+            cb_name = f"checkBox_{cb_id}"
+            if hasattr(self.app, cb_name):
+                checkbox = getattr(self.app, cb_name)
+                checkbox.setChecked(test in selected_tests)
+
+    def setup_test_duration_settings(self):
+        """Set up spinBox_8 for the 'testDuration' setting in [yCruncher]."""
+        if hasattr(self.app, "spinBox_8"):
+            self.app.spinBox_8.setMinimum(1)
+            self.app.spinBox_8.setMaximum(6000)
+            current_duration = self.config["yCruncher"].getint("testDuration", 60)
+            if current_duration < 1:
+                current_duration = 1
+            elif current_duration > 6000:
+                current_duration = 6000
+            self.app.spinBox_8.setValue(current_duration)
+            self.app.spinBox_8.valueChanged.connect(self.update_test_duration)
+        else:
+            print("Warning: spinBox_8 not found in the UI")
+
+    def setup_logging_wrapper_settings(self):
+        """Set up checkBox_49 for the 'enableycruncherloggingwrapper' setting in [yCruncher]."""
+        if hasattr(self.app, "checkBox_49"):
+            current_state = self.config["yCruncher"].getboolean("enableycruncherloggingwrapper", False)
+            self.app.checkBox_49.setChecked(current_state)
+            self.app.checkBox_49.stateChanged.connect(self.update_logging_wrapper)
+        else:
+            print("Warning: checkBox_49 not found in the UI")
+
+    def setup_memory_settings(self):
+        """Set up doubleSpinBox_2 and checkBox_48 for the 'memory' setting in [yCruncher]."""
+        if hasattr(self.app, "doubleSpinBox_2"):
+            # Set range: 0 to 1024
+            self.app.doubleSpinBox_2.setMinimum(0)
+            self.app.doubleSpinBox_2.setMaximum(1024)
+            
+            # Set initial value, default to 256 if not "Default"
+            current_memory = self.config["yCruncher"].get("memory", "256")
+            if current_memory != "Default":
+                try:
+                    memory_value = float(current_memory)
+                    if memory_value < 0:
+                        memory_value = 0
+                    elif memory_value > 1024:
+                        memory_value = 1024
+                    self.app.doubleSpinBox_2.setValue(memory_value)
+                except ValueError:
+                    self.app.doubleSpinBox_2.setValue(256)  # Fallback to 256 if invalid
+            else:
+                self.app.doubleSpinBox_2.setValue(256)  # Default value when "Default" is set
+            
+            # Connect signal
+            self.app.doubleSpinBox_2.valueChanged.connect(self.update_memory_config)
+        else:
+            print("Warning: doubleSpinBox_2 not found in the UI")
+
+        if hasattr(self.app, "checkBox_48"):
+            # Set initial state: checked if "Default", unchecked otherwise
+            current_memory = self.config["yCruncher"].get("memory", "256")
+            self.app.checkBox_48.setChecked(current_memory == "Default")
+            
+            # Connect signal
+            self.app.checkBox_48.stateChanged.connect(self.update_memory_config)
+        else:
+            print("Warning: checkBox_48 not found in the UI")
+
+    def set_initial_mode_state(self):
+        """Set the initial state of the radio buttons based on the config."""
+        current_mode = self.config["yCruncher"].get("mode", "04-P4P")
+        reverse_map = {v: k for k, v in self.mode_map.items()}
+        
+        if current_mode in reverse_map:
+            button_id = reverse_map[current_mode]
+            if hasattr(self.app, f"radioButton_{button_id}"):
+                getattr(self.app, f"radioButton_{button_id}").setChecked(True)
+        else:
+            if hasattr(self.app, "radioButton_10"):
+                self.app.radioButton_10.setChecked(True)
+
+    def update_mode_config(self, button, checked):
+        """Update the 'mode' setting in [yCruncher] based on the selected radio button."""
+        if not checked:
+            return
+        
+        button_id = self.mode_group.id(button)
+        selected_mode = self.mode_map.get(button_id, "04-P4P")
+        self.update_config("yCruncher", "mode", selected_mode)
+        print(f"Updated yCruncher mode to: {selected_mode}")
+
+    def update_tests_config(self):
+        """Update the 'tests' setting in [yCruncher] based on selected checkboxes, only if radioButton_4 is selected."""
+        if hasattr(self.app, "radioButton_4") and self.app.radioButton_4.isChecked():
+            selected_tests = []
+            for cb_id, test in self.tests_map.items():
+                cb_name = f"checkBox_{cb_id}"
+                if hasattr(self.app, cb_name):
+                    checkbox = getattr(self.app, cb_name)
+                    if checkbox.isChecked():
+                        selected_tests.append(test)
+            
+            tests_string = ", ".join(selected_tests) if selected_tests else ""
+            self.update_config("yCruncher", "tests", tests_string)
+            print(f"Updated yCruncher tests to: {tests_string} (radioButton_4 selected)")
+        else:
+            print("yCruncher not selected (radioButton_4), skipping tests update.")
+
+    def update_old_tests_config(self):
+        """Update the 'tests' setting in [yCruncher] based on selected checkboxes, only if radioButton_5 is selected."""
+        if hasattr(self.app, "radioButton_5") and self.app.radioButton_5.isChecked():
+            selected_tests = []
+            for cb_id, test in self.old_tests_map.items():
+                cb_name = f"checkBox_{cb_id}"
+                if hasattr(self.app, cb_name):
+                    checkbox = getattr(self.app, cb_name)
+                    if checkbox.isChecked():
+                        selected_tests.append(test)
+            
+            tests_string = ", ".join(selected_tests) if selected_tests else ""
+            self.update_config("yCruncher", "tests", tests_string)
+            print(f"Updated yCruncher tests to: {tests_string} (radioButton_5 selected)")
+        else:
+            print("yCruncher Old not selected (radioButton_5), skipping tests update.")
+
+    def update_test_duration(self, value):
+        """Update the 'testDuration' setting in [yCruncher] based on spinBox_8 value."""
+        self.update_config("yCruncher", "testDuration", value)
+        print(f"Updated yCruncher testDuration to: {value}")
+
+    def update_logging_wrapper(self, state):
+        """Update the 'enableycruncherloggingwrapper' setting in [yCruncher] based on checkBox_49 state."""
+        value = "1" if state else "0"
+        self.update_config("yCruncher", "enableycruncherloggingwrapper", value)
+        print(f"Updated yCruncher enableycruncherloggingwrapper to: {value}")
+
+    def update_memory_config(self):
+        """Update the 'memory' setting in [yCruncher] based on doubleSpinBox_2 and checkBox_48."""
+        if hasattr(self.app, "checkBox_48") and self.app.checkBox_48.isChecked():
+            memory_value = "Default"
+        else:
+            if hasattr(self.app, "doubleSpinBox_2"):
+                memory_value = self.app.doubleSpinBox_2.value()
+            else:
+                memory_value = 256  # Fallback if doubleSpinBox_2 is missing
+        
+        self.update_config("yCruncher", "memory", memory_value)
+        print(f"Updated yCruncher memory to: {memory_value}")
+
+    def update_config(self, section, option, value):
+        """Update a setting in the specified section of config.ini and save it."""
+        try:
+            if section not in self.config:
+                self.config[section] = {}
+            self.config[section][option] = str(value)
+            with open(self.config_file, 'w') as configfile:
+                self.config.write(configfile)
+            print(f"Updated config.ini: [{section}] {option} = {value}")
+        except Exception as e:
+            print(f"Error writing to config.ini: {e}")
+            QtWidgets.QMessageBox.critical(self.app, "Error", f"Failed to update config: {str(e)}")
+
+# ===========================================
+# Aida64Settings Class (originally from aida64.py)
+# ===========================================
+class Aida64Settings:
+    def __init__(self, config_file, config, app):
+        self.config_file = config_file
+        self.config = config
+        self.app = app  # Reference to the CoreCyclerApp instance
+        self.setup_aida64_settings()
+
+    def setup_aida64_settings(self):
+        """Set up the Aida64 settings and connect checkbox and spinbox signals."""
+        # Ensure [Aida64] section exists in config
+        if "Aida64" not in self.config:
+            self.config["Aida64"] = {}
+
+        # Load initial mode from config
+        initial_mode = self.config["Aida64"].get("mode", "CACHE")
+        mode_list = [m.strip()for m in initial_mode.split(",")]
+
+        # Map checkboxes to their corresponding mode values
+        self.checkbox_map = {
+            "CACHE": self.app.checkBox_24,
+            "CPU": self.app.checkBox_25,
+            "FPU": self.app.checkBox_26,
+            "RAM": self.app.checkBox_27
+        }
+
+        # Set initial checkbox states based on config
+        for mode, checkbox in self.checkbox_map.items():
+            checkbox.setChecked(mode in mode_list)
+
+        # Connect checkbox signals to update_config method
+        self.app.checkBox_24.stateChanged.connect(self.update_mode)
+        self.app.checkBox_25.stateChanged.connect(self.update_mode)
+        self.app.checkBox_26.stateChanged.connect(self.update_mode)
+        self.app.checkBox_27.stateChanged.connect(self.update_mode)
+
+        # Load and set initial state for useavx checkbox (checkBox_28)
+        use_avx = self.config["Aida64"].getboolean("useavx", fallback=False)
+        self.app.checkBox_28.setChecked(use_avx)
+        # Connect checkBox_28 signal to update_useavx method
+        self.app.checkBox_28.stateChanged.connect(self.update_useavx)
+
+        # Load and set initial value for maxmemory spinbox (spinBox_7)
+        max_memory = self.config["Aida64"].getint("maxmemory", fallback=90)
+        self.app.spinBox_7.setRange(0, 100)  # Set range from 0 to 100
+        self.app.spinBox_7.setValue(max_memory)  # Set initial value
+        # Connect spinBox_7 signal to update_maxmemory method
+        self.app.spinBox_7.valueChanged.connect(self.update_maxmemory)
+
+    def update_mode(self):
+        """Update the 'mode' setting in [Aida64] section based on checkbox states."""
+        selected_modes = []
+        for mode, checkbox in self.checkbox_map.items():
+            if checkbox.isChecked():
+                selected_modes.append(mode)
+
+        # If no modes are selected, default to "CACHE"
+        if not selected_modes:
+            selected_modes.append("CACHE")
+
+        # Join selected modes with commas
+        mode_value = ", ".join(selected_modes)
+        self.update_config("mode", mode_value)
+
+    def update_useavx(self, state):
+        """Update the 'useavx' setting in [Aida64] section based on checkBox_28 state."""
+        value = 1 if state else 0
+        self.update_config("useavx", value)
+
+    def update_maxmemory(self, value):
+        """Update the 'maxmemory' setting in [Aida64] section based on spinBox_7 value."""
+        self.update_config("maxmemory", value)
+
+    def update_config(self, option, value):
+        """Update a setting in the [Aida64] section of config.ini and save it."""
+        try:
+            if "Aida64" not in self.config:
+                self.config["Aida64"] = {}
+            self.config["Aida64"][option] = str(value)
+            with open(self.config_file, 'w') as configfile:
+                self.config.write(configfile)
+            print(f"Updated config.ini: [Aida64] {option} = {value}")
+        except Exception as e:
+            print(f"Error writing to config.ini: {e}")
+
+# ===========================================
+# GeneralSettings Class (already in main.py)
 # ===========================================
 class GeneralSettings:
     def __init__(self, config_file, config):
@@ -147,7 +915,7 @@ class GeneralSettings:
             self.app.lineEdit_6.setText("")  # Clear lineEdit_6 for non-Custom options
 
 # ===========================================
-# AutomatedSettings Class (from Automated.py)
+# AutomatedSettings Class (already in main.py)
 # ===========================================
 class AutomatedSettings:
     def __init__(self, config_file, config, app):
@@ -208,7 +976,7 @@ class AutomatedSettings:
         self.update_config("startValues", value)
 
 # ===========================================
-# Main Application Class (from original main.py)
+# Main Application Class (already in main.py)
 # ===========================================
 class CoreCyclerApp(QtWidgets.QMainWindow, Ui_CoreCycler):
     def __init__(self):
@@ -223,7 +991,7 @@ class CoreCyclerApp(QtWidgets.QMainWindow, Ui_CoreCycler):
         # Initialize UI elements first
         self.setupUi(self)  # This attaches all UI elements to self
         
-        # Now initialize AutomatedSettings after UI is set up
+        # Now initialize settings classes after UI is set up
         self.automated = AutomatedSettings(self.config_file, self.config, self)  # Initialize Automated settings
         self.prime95 = Prime95Settings(self.config_file, self.config, self)  # Add Prime95 settings
         self.linpack_settings = LinpackSettings(self.config_file, self.config, self)
