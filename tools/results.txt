@@ -1,0 +1,21 @@
+Core 0 with performance number 212
+Core 1 with performance number 203
+Core 2 with performance number 199
+Core 3 with performance number 190
+Core 4 with performance number 212
+Core 5 with performance number 185
+Core 6 with performance number 208
+Core 7 with performance number 194
+Core 8 with performance number 154
+Core 9 with performance number 181
+Core 10 with performance number 167
+Core 11 with performance number 172
+Core 12 with performance number 158
+Core 13 with performance number 149
+Core 14 with performance number 163
+Core 15 with performance number 176
+
+
+4, 0, 6, 1, 2, 7, 3, 5
+
+9, 15, 11, 10, 14, 12, 8, 13

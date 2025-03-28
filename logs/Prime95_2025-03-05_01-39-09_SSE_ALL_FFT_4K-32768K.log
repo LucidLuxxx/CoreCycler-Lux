@@ -1,0 +1,1812 @@
+[Wed Mar  5 01:39:40 2025]
+Self-test 11200K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 6K passed!
+[Wed Mar  5 01:40:56 2025]
+Self-test 8K passed!
+Self-test 11520K passed!
+Self-test 10K passed!
+[Wed Mar  5 01:41:58 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 01:43:00 2025]
+Self-test 12288K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 01:44:16 2025]
+Self-test 32K passed!
+Self-test 12800K passed!
+Self-test 40K passed!
+[Wed Mar  5 01:45:17 2025]
+Self-test 48K passed!
+Self-test 56K passed!
+Self-test 13440K passed!
+Self-test 64K passed!
+[Wed Mar  5 01:46:35 2025]
+Self-test 72K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 13824K passed!
+[Wed Mar  5 01:47:51 2025]
+Self-test 96K passed!
+Self-test 112K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+[Wed Mar  5 01:49:07 2025]
+Self-test 14336K passed!
+Self-test 160K passed!
+Self-test 192K passed!
+Self-test 224K passed!
+[Wed Mar  5 01:50:17 2025]
+Self-test 240K passed!
+Self-test 15360K passed!
+Self-test 256K passed!
+Self-test 288K passed!
+[Wed Mar  5 01:51:27 2025]
+Self-test 320K passed!
+Self-test 16000K passed!
+Self-test 336K passed!
+Self-test 384K passed!
+[Wed Mar  5 01:52:38 2025]
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 16384K passed!
+Self-test 480K passed!
+[Wed Mar  5 01:53:49 2025]
+Self-test 512K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 17920K passed!
+[Wed Mar  5 01:55:02 2025]
+Self-test 640K passed!
+Self-test 672K passed!
+Self-test 720K passed!
+Self-test 18432K passed!
+[Wed Mar  5 01:56:18 2025]
+Self-test 768K passed!
+Self-test 800K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+[Wed Mar  5 01:57:36 2025]
+Self-test 19200K passed!
+Self-test 1024K passed!
+Self-test 1120K passed!
+Self-test 1152K passed!
+[Wed Mar  5 01:58:47 2025]
+Self-test 1200K passed!
+Self-test 20480K passed!
+Self-test 1280K passed!
+Self-test 1344K passed!
+[Wed Mar  5 02:00:03 2025]
+Self-test 1440K passed!
+Self-test 1536K passed!
+Self-test 21504K passed!
+[Wed Mar  5 02:01:05 2025]
+Self-test 1600K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 02:02:11 2025]
+Self-test 22400K passed!
+Self-test 1792K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 02:03:22 2025]
+Self-test 2240K passed!
+Self-test 23040K passed!
+Self-test 2304K passed!
+Self-test 2400K passed!
+[Wed Mar  5 02:04:39 2025]
+Self-test 2560K passed!
+Self-test 2688K passed!
+Self-test 24576K passed!
+Self-test 2800K passed!
+[Wed Mar  5 02:05:53 2025]
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 25600K passed!
+[Wed Mar  5 02:06:56 2025]
+Self-test 3200K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+[Wed Mar  5 02:08:16 2025]
+Self-test 26880K passed!
+Self-test 3840K passed!
+Self-test 4096K passed!
+Self-test 4480K passed!
+[Wed Mar  5 02:09:36 2025]
+Self-test 4608K passed!
+Self-test 27648K passed!
+Self-test 4800K passed!
+[Wed Mar  5 02:10:51 2025]
+Self-test 5120K passed!
+Self-test 5376K passed!
+Self-test 5600K passed!
+[Wed Mar  5 02:12:11 2025]
+Self-test 28672K passed!
+Self-test 5760K passed!
+Self-test 6144K passed!
+[Wed Mar  5 02:13:14 2025]
+Self-test 6400K passed!
+Self-test 30720K passed!
+Self-test 6720K passed!
+[Wed Mar  5 02:14:22 2025]
+Self-test 6912K passed!
+Self-test 7168K passed!
+Self-test 7680K passed!
+Self-test 32000K passed!
+[Wed Mar  5 02:15:38 2025]
+Self-test 8000K passed!
+Self-test 8192K passed!
+Self-test 8960K passed!
+Self-test 9216K passed!
+[Wed Mar  5 02:16:57 2025]
+Self-test 32768K passed!
+Self-test 9600K passed!
+Self-test 10240K passed!
+[Wed Mar  5 02:18:07 2025]
+Self-test 10752K passed!
+Self-test 4K passed!
+Self-test 11200K passed!
+[Wed Mar  5 02:19:19 2025]
+Self-test 11520K passed!
+Self-test 12288K passed!
+Self-test 12800K passed!
+[Wed Mar  5 02:20:35 2025]
+Self-test 5K passed!
+Self-test 13440K passed!
+Self-test 13824K passed!
+[Wed Mar  5 02:21:56 2025]
+Self-test 14336K passed!
+Self-test 15360K passed!
+Self-test 6K passed!
+[Wed Mar  5 02:23:10 2025]
+Self-test 16000K passed!
+Self-test 16384K passed!
+Self-test 17920K passed!
+[Wed Mar  5 02:24:42 2025]
+Self-test 18432K passed!
+Self-test 8K passed!
+Self-test 19200K passed!
+[Wed Mar  5 02:26:13 2025]
+Self-test 20480K passed!
+Self-test 21504K passed!
+Self-test 10K passed!
+[Wed Mar  5 02:27:30 2025]
+Self-test 22400K passed!
+Self-test 23040K passed!
+Self-test 24576K passed!
+[Wed Mar  5 02:29:00 2025]
+Self-test 25600K passed!
+Self-test 12K passed!
+Self-test 26880K passed!
+[Wed Mar  5 02:30:19 2025]
+Self-test 27648K passed!
+Self-test 28672K passed!
+Self-test 30720K passed!
+[Wed Mar  5 02:31:36 2025]
+Self-test 14K passed!
+Self-test 32000K passed!
+[Wed Mar  5 02:32:37 2025]
+Self-test 32768K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 16K passed!
+[Wed Mar  5 02:33:50 2025]
+Self-test 6K passed!
+Self-test 8K passed!
+Self-test 10K passed!
+[Wed Mar  5 02:34:52 2025]
+Self-test 20K passed!
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 02:36:12 2025]
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 02:37:27 2025]
+Self-test 32K passed!
+Self-test 40K passed!
+Self-test 28K passed!
+Self-test 48K passed!
+[Wed Mar  5 02:38:43 2025]
+Self-test 56K passed!
+Self-test 64K passed!
+Self-test 32K passed!
+Self-test 72K passed!
+[Wed Mar  5 02:39:52 2025]
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 96K passed!
+Self-test 40K passed!
+[Wed Mar  5 02:41:03 2025]
+Self-test 112K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+Self-test 160K passed!
+[Wed Mar  5 02:42:12 2025]
+Self-test 48K passed!
+Self-test 192K passed!
+Self-test 224K passed!
+Self-test 240K passed!
+[Wed Mar  5 02:43:22 2025]
+Self-test 256K passed!
+Self-test 56K passed!
+Self-test 288K passed!
+Self-test 320K passed!
+[Wed Mar  5 02:44:33 2025]
+Self-test 336K passed!
+Self-test 64K passed!
+Self-test 384K passed!
+Self-test 400K passed!
+[Wed Mar  5 02:45:42 2025]
+Self-test 448K passed!
+Self-test 480K passed!
+Self-test 72K passed!
+Self-test 512K passed!
+[Wed Mar  5 02:46:49 2025]
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 640K passed!
+Self-test 80K passed!
+[Wed Mar  5 02:47:57 2025]
+Self-test 672K passed!
+Self-test 720K passed!
+Self-test 768K passed!
+Self-test 84K passed!
+[Wed Mar  5 02:49:09 2025]
+Self-test 800K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+Self-test 1024K passed!
+[Wed Mar  5 02:50:23 2025]
+Self-test 96K passed!
+Self-test 1120K passed!
+Self-test 1152K passed!
+Self-test 1200K passed!
+[Wed Mar  5 02:51:33 2025]
+Self-test 1280K passed!
+Self-test 112K passed!
+Self-test 1344K passed!
+Self-test 1440K passed!
+[Wed Mar  5 02:52:42 2025]
+Self-test 1536K passed!
+Self-test 1600K passed!
+Self-test 128K passed!
+Self-test 1680K passed!
+[Wed Mar  5 02:53:56 2025]
+Self-test 1728K passed!
+Self-test 1792K passed!
+Self-test 144K passed!
+Self-test 1920K passed!
+[Wed Mar  5 02:55:06 2025]
+Self-test 2048K passed!
+Self-test 2240K passed!
+Self-test 2304K passed!
+Self-test 160K passed!
+[Wed Mar  5 02:56:16 2025]
+Self-test 2400K passed!
+Self-test 2560K passed!
+Self-test 2688K passed!
+Self-test 2800K passed!
+[Wed Mar  5 02:57:27 2025]
+Self-test 192K passed!
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 3200K passed!
+[Wed Mar  5 02:58:40 2025]
+Self-test 224K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+[Wed Mar  5 02:59:53 2025]
+Self-test 3840K passed!
+Self-test 240K passed!
+Self-test 4096K passed!
+Self-test 4480K passed!
+[Wed Mar  5 03:01:12 2025]
+Self-test 4608K passed!
+Self-test 4800K passed!
+Self-test 256K passed!
+[Wed Mar  5 03:02:18 2025]
+Self-test 5120K passed!
+Self-test 5376K passed!
+Self-test 5600K passed!
+[Wed Mar  5 03:03:40 2025]
+Self-test 5760K passed!
+Self-test 288K passed!
+Self-test 6144K passed!
+[Wed Mar  5 03:04:57 2025]
+Self-test 6400K passed!
+Self-test 6720K passed!
+Self-test 320K passed!
+[Wed Mar  5 03:06:23 2025]
+Self-test 6912K passed!
+Self-test 7168K passed!
+Self-test 7680K passed!
+[Wed Mar  5 03:07:42 2025]
+Self-test 8000K passed!
+Self-test 336K passed!
+Self-test 8192K passed!
+[Wed Mar  5 03:08:48 2025]
+Self-test 8960K passed!
+Self-test 9216K passed!
+Self-test 9600K passed!
+[Wed Mar  5 03:09:59 2025]
+Self-test 384K passed!
+Self-test 10240K passed!
+Self-test 10752K passed!
+[Wed Mar  5 03:11:19 2025]
+Self-test 11200K passed!
+Self-test 11520K passed!
+Self-test 400K passed!
+Self-test 12288K passed!
+[Wed Mar  5 03:12:38 2025]
+Self-test 12800K passed!
+Self-test 13440K passed!
+Self-test 448K passed!
+[Wed Mar  5 03:13:45 2025]
+Self-test 13824K passed!
+Self-test 14336K passed!
+Self-test 15360K passed!
+[Wed Mar  5 03:14:48 2025]
+Self-test 16000K passed!
+Self-test 480K passed!
+Self-test 16384K passed!
+Self-test 17920K passed!
+[Wed Mar  5 03:16:07 2025]
+Self-test 18432K passed!
+Self-test 19200K passed!
+Self-test 512K passed!
+[Wed Mar  5 03:17:13 2025]
+Self-test 20480K passed!
+Self-test 21504K passed!
+Self-test 22400K passed!
+[Wed Mar  5 03:18:24 2025]
+Self-test 560K passed!
+Self-test 23040K passed!
+Self-test 24576K passed!
+[Wed Mar  5 03:19:33 2025]
+Self-test 25600K passed!
+Self-test 26880K passed!
+Self-test 576K passed!
+[Wed Mar  5 03:20:41 2025]
+Self-test 27648K passed!
+Self-test 28672K passed!
+Self-test 30720K passed!
+[Wed Mar  5 03:21:58 2025]
+Self-test 32000K passed!
+Self-test 640K passed!
+Self-test 32768K passed!
+Self-test 4K passed!
+[Wed Mar  5 03:23:15 2025]
+Self-test 5K passed!
+Self-test 6K passed!
+Self-test 672K passed!
+Self-test 8K passed!
+[Wed Mar  5 03:24:35 2025]
+Self-test 10K passed!
+Self-test 12K passed!
+Self-test 720K passed!
+Self-test 14K passed!
+[Wed Mar  5 03:25:54 2025]
+Self-test 16K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 768K passed!
+[Wed Mar  5 03:27:10 2025]
+Self-test 28K passed!
+Self-test 32K passed!
+Self-test 40K passed!
+Self-test 48K passed!
+[Wed Mar  5 03:28:26 2025]
+Self-test 800K passed!
+Self-test 56K passed!
+Self-test 64K passed!
+Self-test 72K passed!
+[Wed Mar  5 03:29:37 2025]
+Self-test 896K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 96K passed!
+[Wed Mar  5 03:30:50 2025]
+Self-test 112K passed!
+Self-test 960K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+[Wed Mar  5 03:32:00 2025]
+Self-test 160K passed!
+Self-test 192K passed!
+Self-test 1024K passed!
+Self-test 224K passed!
+[Wed Mar  5 03:33:11 2025]
+Self-test 240K passed!
+Self-test 256K passed!
+Self-test 288K passed!
+Self-test 1120K passed!
+[Wed Mar  5 03:34:19 2025]
+Self-test 320K passed!
+Self-test 336K passed!
+Self-test 384K passed!
+Self-test 1152K passed!
+[Wed Mar  5 03:35:34 2025]
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 480K passed!
+Self-test 512K passed!
+[Wed Mar  5 03:36:44 2025]
+Self-test 1200K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 640K passed!
+[Wed Mar  5 03:38:00 2025]
+Self-test 672K passed!
+Self-test 1280K passed!
+Self-test 720K passed!
+Self-test 768K passed!
+[Wed Mar  5 03:39:15 2025]
+Self-test 800K passed!
+Self-test 1344K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+[Wed Mar  5 03:40:31 2025]
+Self-test 1024K passed!
+Self-test 1120K passed!
+Self-test 1440K passed!
+[Wed Mar  5 03:41:32 2025]
+Self-test 1152K passed!
+Self-test 1200K passed!
+Self-test 1280K passed!
+Self-test 1344K passed!
+[Wed Mar  5 03:42:47 2025]
+Self-test 1536K passed!
+Self-test 1440K passed!
+Self-test 1536K passed!
+Self-test 1600K passed!
+[Wed Mar  5 03:44:01 2025]
+Self-test 1680K passed!
+Self-test 1600K passed!
+Self-test 1728K passed!
+Self-test 1792K passed!
+[Wed Mar  5 03:45:15 2025]
+Self-test 1920K passed!
+Self-test 1680K passed!
+Self-test 2048K passed!
+Self-test 2240K passed!
+[Wed Mar  5 03:46:26 2025]
+Self-test 2304K passed!
+Self-test 2400K passed!
+Self-test 1728K passed!
+Self-test 2560K passed!
+[Wed Mar  5 03:47:38 2025]
+Self-test 2688K passed!
+Self-test 2800K passed!
+Self-test 2880K passed!
+Self-test 1792K passed!
+[Wed Mar  5 03:48:50 2025]
+Self-test 3072K passed!
+Self-test 3200K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+[Wed Mar  5 03:50:04 2025]
+Self-test 1920K passed!
+Self-test 3584K passed!
+Self-test 3840K passed!
+Self-test 4096K passed!
+[Wed Mar  5 03:51:17 2025]
+Self-test 2048K passed!
+Self-test 4480K passed!
+Self-test 4608K passed!
+[Wed Mar  5 03:52:25 2025]
+Self-test 4800K passed!
+Self-test 5120K passed!
+FATAL ERROR: Rounding was 0.5, expected less than 0.4
+Hardware failure detected running 2240K FFT size, consult stress.txt file.
+[Wed Mar  5 03:53:29 2025]
+Self-test 11200K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 6K passed!
+[Wed Mar  5 03:54:46 2025]
+Self-test 8K passed!
+Self-test 11520K passed!
+Self-test 10K passed!
+[Wed Mar  5 03:55:47 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 03:56:50 2025]
+Self-test 12288K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 03:58:05 2025]
+Self-test 32K passed!
+Self-test 12800K passed!
+Self-test 40K passed!
+[Wed Mar  5 03:59:06 2025]
+Self-test 48K passed!
+Self-test 56K passed!
+Self-test 13440K passed!
+[Wed Mar  5 04:00:07 2025]
+Self-test 64K passed!
+Self-test 72K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+[Wed Mar  5 04:01:21 2025]
+Self-test 13824K passed!
+Self-test 96K passed!
+Self-test 112K passed!
+Self-test 128K passed!
+[Wed Mar  5 04:02:30 2025]
+Self-test 144K passed!
+Self-test 14336K passed!
+Self-test 160K passed!
+Self-test 192K passed!
+[Wed Mar  5 04:03:48 2025]
+Self-test 224K passed!
+Self-test 240K passed!
+Self-test 15360K passed!
+Self-test 256K passed!
+[Wed Mar  5 04:04:58 2025]
+Self-test 288K passed!
+Self-test 320K passed!
+Self-test 16000K passed!
+Self-test 336K passed!
+[Wed Mar  5 04:06:11 2025]
+Self-test 384K passed!
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 16384K passed!
+[Wed Mar  5 04:07:20 2025]
+Self-test 480K passed!
+Self-test 512K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+[Wed Mar  5 04:08:33 2025]
+Self-test 17920K passed!
+Self-test 640K passed!
+Self-test 672K passed!
+Self-test 720K passed!
+[Wed Mar  5 04:09:47 2025]
+Self-test 18432K passed!
+Self-test 768K passed!
+Self-test 800K passed!
+Self-test 896K passed!
+[Wed Mar  5 04:11:00 2025]
+Self-test 960K passed!
+Self-test 19200K passed!
+Self-test 1024K passed!
+Self-test 1120K passed!
+[Wed Mar  5 04:12:17 2025]
+Self-test 1152K passed!
+Self-test 1200K passed!
+Self-test 20480K passed!
+Self-test 1280K passed!
+[Wed Mar  5 04:13:34 2025]
+Self-test 1344K passed!
+Self-test 1440K passed!
+Self-test 1536K passed!
+[Wed Mar  5 04:14:36 2025]
+Self-test 21504K passed!
+Self-test 1600K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 04:15:57 2025]
+Self-test 22400K passed!
+Self-test 1792K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 04:17:10 2025]
+Self-test 2240K passed!
+Self-test 23040K passed!
+Self-test 2304K passed!
+Self-test 2400K passed!
+[Wed Mar  5 04:18:27 2025]
+Self-test 2560K passed!
+Self-test 2688K passed!
+Self-test 24576K passed!
+Self-test 2800K passed!
+[Wed Mar  5 04:19:41 2025]
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 25600K passed!
+[Wed Mar  5 04:20:44 2025]
+Self-test 3200K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+[Wed Mar  5 04:22:04 2025]
+Self-test 26880K passed!
+Self-test 3840K passed!
+Self-test 4096K passed!
+Self-test 4480K passed!
+[Wed Mar  5 04:23:24 2025]
+Self-test 4608K passed!
+Self-test 27648K passed!
+Self-test 4800K passed!
+[Wed Mar  5 04:24:39 2025]
+Self-test 5120K passed!
+Self-test 5376K passed!
+Self-test 5600K passed!
+[Wed Mar  5 04:26:00 2025]
+Self-test 28672K passed!
+Self-test 5760K passed!
+Self-test 6144K passed!
+[Wed Mar  5 04:27:02 2025]
+Self-test 6400K passed!
+Self-test 30720K passed!
+Self-test 6720K passed!
+[Wed Mar  5 04:28:10 2025]
+Self-test 6912K passed!
+Self-test 7168K passed!
+Self-test 7680K passed!
+Self-test 32000K passed!
+[Wed Mar  5 04:29:26 2025]
+Self-test 8000K passed!
+Self-test 8192K passed!
+Self-test 8960K passed!
+Self-test 9216K passed!
+[Wed Mar  5 04:30:45 2025]
+Self-test 32768K passed!
+Self-test 9600K passed!
+Self-test 10240K passed!
+[Wed Mar  5 04:31:54 2025]
+Self-test 10752K passed!
+Self-test 4K passed!
+Self-test 11200K passed!
+[Wed Mar  5 04:33:06 2025]
+Self-test 11520K passed!
+Self-test 12288K passed!
+Self-test 12800K passed!
+[Wed Mar  5 04:34:22 2025]
+Self-test 5K passed!
+FATAL ERROR: Rounding was 0.4999892488, expected less than 0.4
+Hardware failure detected running 13440K FFT size, consult stress.txt file.
+[Wed Mar  5 04:35:18 2025]
+Self-test 11200K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 6K passed!
+[Wed Mar  5 04:36:35 2025]
+Self-test 8K passed!
+Self-test 11520K passed!
+Self-test 10K passed!
+[Wed Mar  5 04:37:36 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 04:38:38 2025]
+Self-test 12288K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 04:39:52 2025]
+Self-test 32K passed!
+Self-test 12800K passed!
+Self-test 40K passed!
+[Wed Mar  5 04:40:53 2025]
+Self-test 48K passed!
+Self-test 56K passed!
+Self-test 13440K passed!
+[Wed Mar  5 04:41:54 2025]
+Self-test 64K passed!
+Self-test 72K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+[Wed Mar  5 04:43:08 2025]
+Self-test 13824K passed!
+Self-test 96K passed!
+Self-test 112K passed!
+Self-test 128K passed!
+[Wed Mar  5 04:44:17 2025]
+Self-test 144K passed!
+Self-test 14336K passed!
+Self-test 160K passed!
+Self-test 192K passed!
+[Wed Mar  5 04:45:34 2025]
+Self-test 224K passed!
+Self-test 240K passed!
+Self-test 15360K passed!
+Self-test 256K passed!
+[Wed Mar  5 04:46:44 2025]
+Self-test 288K passed!
+Self-test 320K passed!
+Self-test 16000K passed!
+Self-test 336K passed!
+[Wed Mar  5 04:47:57 2025]
+Self-test 384K passed!
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 16384K passed!
+[Wed Mar  5 04:49:05 2025]
+Self-test 480K passed!
+Self-test 512K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+[Wed Mar  5 04:50:18 2025]
+Self-test 17920K passed!
+Self-test 640K passed!
+Self-test 672K passed!
+Self-test 720K passed!
+[Wed Mar  5 04:51:33 2025]
+Self-test 18432K passed!
+Self-test 768K passed!
+Self-test 800K passed!
+Self-test 896K passed!
+[Wed Mar  5 04:52:44 2025]
+Self-test 960K passed!
+Self-test 19200K passed!
+Self-test 1024K passed!
+[Wed Mar  5 04:53:45 2025]
+Self-test 1120K passed!
+Self-test 1152K passed!
+Self-test 1200K passed!
+Self-test 20480K passed!
+[Wed Mar  5 04:55:02 2025]
+Self-test 1280K passed!
+Self-test 1344K passed!
+Self-test 1440K passed!
+Self-test 1536K passed!
+[Wed Mar  5 04:56:20 2025]
+Self-test 21504K passed!
+Self-test 1600K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 04:57:41 2025]
+Self-test 22400K passed!
+Self-test 1792K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 04:58:53 2025]
+Self-test 2240K passed!
+Self-test 23040K passed!
+FATAL ERROR: Rounding was 0.5, expected less than 0.4
+Hardware failure detected running 2304K FFT size, consult stress.txt file.
+[Wed Mar  5 04:59:58 2025]
+Self-test 11200K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 6K passed!
+[Wed Mar  5 05:01:15 2025]
+Self-test 8K passed!
+Self-test 11520K passed!
+Self-test 10K passed!
+[Wed Mar  5 05:02:16 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 05:03:18 2025]
+Self-test 12288K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 05:04:33 2025]
+Self-test 32K passed!
+Self-test 12800K passed!
+Self-test 40K passed!
+[Wed Mar  5 05:05:34 2025]
+Self-test 48K passed!
+Self-test 56K passed!
+Self-test 13440K passed!
+[Wed Mar  5 05:06:35 2025]
+Self-test 64K passed!
+Self-test 72K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+[Wed Mar  5 05:07:49 2025]
+Self-test 13824K passed!
+Self-test 96K passed!
+Self-test 112K passed!
+Self-test 128K passed!
+[Wed Mar  5 05:08:58 2025]
+Self-test 144K passed!
+Self-test 14336K passed!
+Self-test 160K passed!
+Self-test 192K passed!
+[Wed Mar  5 05:10:15 2025]
+Self-test 224K passed!
+Self-test 240K passed!
+Self-test 15360K passed!
+Self-test 256K passed!
+[Wed Mar  5 05:11:25 2025]
+Self-test 288K passed!
+Self-test 320K passed!
+Self-test 16000K passed!
+Self-test 336K passed!
+[Wed Mar  5 05:12:37 2025]
+Self-test 384K passed!
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 16384K passed!
+[Wed Mar  5 05:13:46 2025]
+Self-test 480K passed!
+Self-test 512K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+[Wed Mar  5 05:14:58 2025]
+Self-test 17920K passed!
+Self-test 640K passed!
+Self-test 672K passed!
+Self-test 720K passed!
+[Wed Mar  5 05:16:13 2025]
+Self-test 18432K passed!
+Self-test 768K passed!
+Self-test 800K passed!
+Self-test 896K passed!
+[Wed Mar  5 05:17:25 2025]
+Self-test 960K passed!
+Self-test 19200K passed!
+Self-test 1024K passed!
+Self-test 1120K passed!
+[Wed Mar  5 05:18:42 2025]
+Self-test 1152K passed!
+Self-test 1200K passed!
+Self-test 20480K passed!
+[Wed Mar  5 05:19:43 2025]
+Self-test 1280K passed!
+Self-test 1344K passed!
+Self-test 1440K passed!
+Self-test 1536K passed!
+[Wed Mar  5 05:21:02 2025]
+Self-test 21504K passed!
+Self-test 1600K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 05:22:23 2025]
+Self-test 22400K passed!
+Self-test 1792K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 05:23:34 2025]
+Self-test 2240K passed!
+Self-test 23040K passed!
+Self-test 2304K passed!
+Self-test 2400K passed!
+[Wed Mar  5 05:24:50 2025]
+Self-test 2560K passed!
+FATAL ERROR: Rounding was 0.5, expected less than 0.4
+Hardware failure detected running 2688K FFT size, consult stress.txt file.
+[Wed Mar  5 05:25:34 2025]
+Self-test 11200K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 6K passed!
+[Wed Mar  5 05:26:50 2025]
+Self-test 8K passed!
+Self-test 11520K passed!
+Self-test 10K passed!
+[Wed Mar  5 05:27:52 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 05:28:54 2025]
+Self-test 12288K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 05:30:10 2025]
+Self-test 32K passed!
+Self-test 12800K passed!
+Self-test 40K passed!
+Self-test 48K passed!
+[Wed Mar  5 05:31:30 2025]
+Self-test 56K passed!
+Self-test 13440K passed!
+Self-test 64K passed!
+Self-test 72K passed!
+[Wed Mar  5 05:32:44 2025]
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 13824K passed!
+Self-test 96K passed!
+[Wed Mar  5 05:34:01 2025]
+Self-test 112K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+Self-test 14336K passed!
+[Wed Mar  5 05:35:17 2025]
+Self-test 160K passed!
+Self-test 192K passed!
+Self-test 224K passed!
+Self-test 240K passed!
+[Wed Mar  5 05:36:28 2025]
+Self-test 15360K passed!
+Self-test 256K passed!
+Self-test 288K passed!
+Self-test 320K passed!
+[Wed Mar  5 05:37:40 2025]
+Self-test 16000K passed!
+Self-test 336K passed!
+Self-test 384K passed!
+Self-test 400K passed!
+[Wed Mar  5 05:38:48 2025]
+Self-test 448K passed!
+Self-test 16384K passed!
+Self-test 480K passed!
+Self-test 512K passed!
+[Wed Mar  5 05:39:57 2025]
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 17920K passed!
+Self-test 640K passed!
+[Wed Mar  5 05:41:12 2025]
+Self-test 672K passed!
+Self-test 720K passed!
+Self-test 18432K passed!
+Self-test 768K passed!
+[Wed Mar  5 05:42:26 2025]
+Self-test 800K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+[Wed Mar  5 05:43:28 2025]
+Self-test 19200K passed!
+Self-test 1024K passed!
+Self-test 1120K passed!
+Self-test 1152K passed!
+[Wed Mar  5 05:44:38 2025]
+Self-test 1200K passed!
+Self-test 20480K passed!
+Self-test 1280K passed!
+Self-test 1344K passed!
+[Wed Mar  5 05:45:55 2025]
+Self-test 1440K passed!
+Self-test 1536K passed!
+Self-test 21504K passed!
+[Wed Mar  5 05:46:56 2025]
+Self-test 1600K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 05:48:01 2025]
+Self-test 22400K passed!
+Self-test 1792K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 05:49:13 2025]
+Self-test 2240K passed!
+Self-test 23040K passed!
+Self-test 2304K passed!
+Self-test 2400K passed!
+[Wed Mar  5 05:50:29 2025]
+Self-test 2560K passed!
+Self-test 2688K passed!
+Self-test 24576K passed!
+Self-test 2800K passed!
+[Wed Mar  5 05:51:44 2025]
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 25600K passed!
+[Wed Mar  5 05:52:46 2025]
+Self-test 3200K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+[Wed Mar  5 05:54:07 2025]
+Self-test 26880K passed!
+Self-test 3840K passed!
+Self-test 4096K passed!
+Self-test 4480K passed!
+[Wed Mar  5 05:55:27 2025]
+Self-test 4608K passed!
+Self-test 27648K passed!
+Self-test 4800K passed!
+[Wed Mar  5 05:56:41 2025]
+Self-test 5120K passed!
+Self-test 5376K passed!
+Self-test 5600K passed!
+[Wed Mar  5 05:58:01 2025]
+Self-test 28672K passed!
+Self-test 5760K passed!
+Self-test 6144K passed!
+[Wed Mar  5 05:59:03 2025]
+Self-test 6400K passed!
+Self-test 30720K passed!
+Self-test 6720K passed!
+[Wed Mar  5 06:00:11 2025]
+Self-test 6912K passed!
+Self-test 7168K passed!
+Self-test 7680K passed!
+Self-test 32000K passed!
+[Wed Mar  5 06:01:27 2025]
+Self-test 8000K passed!
+Self-test 8192K passed!
+Self-test 8960K passed!
+Self-test 9216K passed!
+[Wed Mar  5 06:02:45 2025]
+Self-test 32768K passed!
+Self-test 9600K passed!
+Self-test 10240K passed!
+[Wed Mar  5 06:03:55 2025]
+Self-test 10752K passed!
+Self-test 4K passed!
+Self-test 11200K passed!
+[Wed Mar  5 06:05:08 2025]
+Self-test 11520K passed!
+Self-test 12288K passed!
+Self-test 12800K passed!
+[Wed Mar  5 06:06:24 2025]
+Self-test 5K passed!
+Self-test 13440K passed!
+Self-test 13824K passed!
+[Wed Mar  5 06:07:46 2025]
+Self-test 14336K passed!
+Self-test 15360K passed!
+Self-test 6K passed!
+[Wed Mar  5 06:09:01 2025]
+Self-test 16000K passed!
+Self-test 16384K passed!
+Self-test 17920K passed!
+[Wed Mar  5 06:10:33 2025]
+Self-test 18432K passed!
+Self-test 8K passed!
+Self-test 19200K passed!
+[Wed Mar  5 06:12:05 2025]
+Self-test 20480K passed!
+Self-test 21504K passed!
+Self-test 10K passed!
+[Wed Mar  5 06:13:21 2025]
+Self-test 22400K passed!
+Self-test 23040K passed!
+Self-test 24576K passed!
+[Wed Mar  5 06:14:51 2025]
+Self-test 25600K passed!
+Self-test 12K passed!
+Self-test 26880K passed!
+[Wed Mar  5 06:16:12 2025]
+Self-test 27648K passed!
+Self-test 28672K passed!
+Self-test 30720K passed!
+[Wed Mar  5 06:17:28 2025]
+Self-test 14K passed!
+Self-test 32000K passed!
+Self-test 32768K passed!
+[Wed Mar  5 06:18:48 2025]
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 16K passed!
+Self-test 6K passed!
+[Wed Mar  5 06:20:04 2025]
+Self-test 8K passed!
+Self-test 10K passed!
+Self-test 20K passed!
+[Wed Mar  5 06:21:07 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+Self-test 20K passed!
+[Wed Mar  5 06:22:25 2025]
+Self-test 24K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+Self-test 32K passed!
+[Wed Mar  5 06:23:40 2025]
+Self-test 40K passed!
+Self-test 28K passed!
+Self-test 48K passed!
+Self-test 56K passed!
+[Wed Mar  5 06:24:55 2025]
+Self-test 64K passed!
+Self-test 32K passed!
+Self-test 72K passed!
+Self-test 80K passed!
+[Wed Mar  5 06:26:03 2025]
+Self-test 84K passed!
+Self-test 96K passed!
+Self-test 40K passed!
+Self-test 112K passed!
+[Wed Mar  5 06:27:14 2025]
+Self-test 128K passed!
+Self-test 144K passed!
+Self-test 160K passed!
+Self-test 48K passed!
+[Wed Mar  5 06:28:26 2025]
+Self-test 192K passed!
+Self-test 224K passed!
+Self-test 240K passed!
+Self-test 256K passed!
+[Wed Mar  5 06:29:37 2025]
+Self-test 56K passed!
+Self-test 288K passed!
+Self-test 320K passed!
+Self-test 336K passed!
+[Wed Mar  5 06:30:46 2025]
+Self-test 64K passed!
+Self-test 384K passed!
+Self-test 400K passed!
+Self-test 448K passed!
+[Wed Mar  5 06:31:54 2025]
+Self-test 480K passed!
+Self-test 72K passed!
+Self-test 512K passed!
+Self-test 560K passed!
+[Wed Mar  5 06:33:02 2025]
+Self-test 576K passed!
+Self-test 640K passed!
+Self-test 80K passed!
+Self-test 672K passed!
+[Wed Mar  5 06:34:13 2025]
+Self-test 720K passed!
+Self-test 768K passed!
+Self-test 84K passed!
+Self-test 800K passed!
+[Wed Mar  5 06:35:26 2025]
+Self-test 896K passed!
+Self-test 960K passed!
+Self-test 1024K passed!
+Self-test 96K passed!
+[Wed Mar  5 06:36:38 2025]
+Self-test 1120K passed!
+Self-test 1152K passed!
+Self-test 1200K passed!
+Self-test 1280K passed!
+[Wed Mar  5 06:37:49 2025]
+Self-test 112K passed!
+Self-test 1344K passed!
+Self-test 1440K passed!
+Self-test 1536K passed!
+[Wed Mar  5 06:39:02 2025]
+Self-test 1600K passed!
+Self-test 128K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 06:40:13 2025]
+Self-test 1792K passed!
+Self-test 144K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 06:41:24 2025]
+Self-test 2240K passed!
+Self-test 2304K passed!
+Self-test 160K passed!
+Self-test 2400K passed!
+[Wed Mar  5 06:42:36 2025]
+Self-test 2560K passed!
+Self-test 2688K passed!
+Self-test 2800K passed!
+Self-test 192K passed!
+[Wed Mar  5 06:43:45 2025]
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 3200K passed!
+Self-test 224K passed!
+[Wed Mar  5 06:45:00 2025]
+Self-test 3360K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+Self-test 3840K passed!
+[Wed Mar  5 06:46:12 2025]
+Self-test 240K passed!
+Self-test 4096K passed!
+Self-test 4480K passed!
+[Wed Mar  5 06:47:15 2025]
+Self-test 4608K passed!
+Self-test 4800K passed!
+Self-test 256K passed!
+[Wed Mar  5 06:48:19 2025]
+Self-test 5120K passed!
+Self-test 5376K passed!
+Self-test 5600K passed!
+[Wed Mar  5 06:49:43 2025]
+Self-test 5760K passed!
+Self-test 288K passed!
+Self-test 6144K passed!
+[Wed Mar  5 06:51:00 2025]
+Self-test 6400K passed!
+Self-test 6720K passed!
+Self-test 320K passed!
+[Wed Mar  5 06:52:26 2025]
+Self-test 6912K passed!
+Self-test 7168K passed!
+Self-test 7680K passed!
+[Wed Mar  5 06:53:46 2025]
+Self-test 8000K passed!
+Self-test 336K passed!
+Self-test 8192K passed!
+[Wed Mar  5 06:54:52 2025]
+Self-test 8960K passed!
+Self-test 9216K passed!
+Self-test 9600K passed!
+[Wed Mar  5 06:56:04 2025]
+Self-test 384K passed!
+Self-test 10240K passed!
+Self-test 10752K passed!
+[Wed Mar  5 06:57:24 2025]
+Self-test 11200K passed!
+Self-test 11520K passed!
+Self-test 400K passed!
+Self-test 12288K passed!
+[Wed Mar  5 06:58:44 2025]
+Self-test 12800K passed!
+Self-test 13440K passed!
+Self-test 448K passed!
+[Wed Mar  5 06:59:50 2025]
+Self-test 13824K passed!
+Self-test 14336K passed!
+Self-test 15360K passed!
+[Wed Mar  5 07:00:53 2025]
+Self-test 16000K passed!
+Self-test 480K passed!
+Self-test 16384K passed!
+Self-test 17920K passed!
+[Wed Mar  5 07:02:12 2025]
+Self-test 18432K passed!
+Self-test 19200K passed!
+Self-test 512K passed!
+[Wed Mar  5 07:03:18 2025]
+Self-test 20480K passed!
+Self-test 21504K passed!
+Self-test 22400K passed!
+[Wed Mar  5 07:04:30 2025]
+Self-test 560K passed!
+Self-test 23040K passed!
+Self-test 24576K passed!
+[Wed Mar  5 07:05:38 2025]
+Self-test 25600K passed!
+Self-test 26880K passed!
+Self-test 576K passed!
+[Wed Mar  5 07:06:46 2025]
+Self-test 27648K passed!
+Self-test 28672K passed!
+Self-test 30720K passed!
+[Wed Mar  5 07:08:03 2025]
+Self-test 32000K passed!
+Self-test 640K passed!
+Self-test 32768K passed!
+Self-test 4K passed!
+[Wed Mar  5 07:09:19 2025]
+Self-test 5K passed!
+Self-test 6K passed!
+Self-test 672K passed!
+Self-test 8K passed!
+[Wed Mar  5 07:10:39 2025]
+Self-test 10K passed!
+Self-test 12K passed!
+Self-test 720K passed!
+Self-test 14K passed!
+[Wed Mar  5 07:11:58 2025]
+Self-test 16K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+FATAL ERROR: Rounding was 0.4999989552, expected less than 0.4
+Hardware failure detected running 768K FFT size, consult stress.txt file.
+[Wed Mar  5 07:13:05 2025]
+Self-test 11200K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 6K passed!
+[Wed Mar  5 07:14:21 2025]
+Self-test 8K passed!
+Self-test 11520K passed!
+Self-test 10K passed!
+[Wed Mar  5 07:15:23 2025]
+Self-test 12K passed!
+Self-test 14K passed!
+Self-test 16K passed!
+[Wed Mar  5 07:16:25 2025]
+Self-test 12288K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 28K passed!
+[Wed Mar  5 07:17:41 2025]
+Self-test 32K passed!
+Self-test 12800K passed!
+Self-test 40K passed!
+Self-test 48K passed!
+[Wed Mar  5 07:19:01 2025]
+Self-test 56K passed!
+Self-test 13440K passed!
+Self-test 64K passed!
+Self-test 72K passed!
+[Wed Mar  5 07:20:15 2025]
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 13824K passed!
+Self-test 96K passed!
+[Wed Mar  5 07:21:32 2025]
+Self-test 112K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+Self-test 14336K passed!
+[Wed Mar  5 07:22:48 2025]
+Self-test 160K passed!
+Self-test 192K passed!
+Self-test 224K passed!
+Self-test 240K passed!
+[Wed Mar  5 07:23:59 2025]
+Self-test 15360K passed!
+Self-test 256K passed!
+Self-test 288K passed!
+Self-test 320K passed!
+[Wed Mar  5 07:25:11 2025]
+Self-test 16000K passed!
+Self-test 336K passed!
+Self-test 384K passed!
+Self-test 400K passed!
+[Wed Mar  5 07:26:20 2025]
+Self-test 448K passed!
+Self-test 16384K passed!
+Self-test 480K passed!
+Self-test 512K passed!
+[Wed Mar  5 07:27:29 2025]
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 17920K passed!
+Self-test 640K passed!
+[Wed Mar  5 07:28:43 2025]
+Self-test 672K passed!
+Self-test 720K passed!
+Self-test 18432K passed!
+Self-test 768K passed!
+[Wed Mar  5 07:29:57 2025]
+Self-test 800K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+[Wed Mar  5 07:30:59 2025]
+Self-test 19200K passed!
+Self-test 1024K passed!
+Self-test 1120K passed!
+Self-test 1152K passed!
+[Wed Mar  5 07:32:10 2025]
+Self-test 1200K passed!
+Self-test 20480K passed!
+Self-test 1280K passed!
+Self-test 1344K passed!
+[Wed Mar  5 07:33:27 2025]
+Self-test 1440K passed!
+Self-test 1536K passed!
+Self-test 21504K passed!
+[Wed Mar  5 07:34:29 2025]
+Self-test 1600K passed!
+Self-test 1680K passed!
+Self-test 1728K passed!
+[Wed Mar  5 07:35:33 2025]
+Self-test 22400K passed!
+Self-test 1792K passed!
+Self-test 1920K passed!
+Self-test 2048K passed!
+[Wed Mar  5 07:36:45 2025]
+Self-test 2240K passed!
+Self-test 23040K passed!
+Self-test 2304K passed!
+Self-test 2400K passed!
+[Wed Mar  5 07:38:02 2025]
+Self-test 2560K passed!
+Self-test 2688K passed!
+Self-test 24576K passed!
+Self-test 2800K passed!
+[Wed Mar  5 07:39:16 2025]
+Self-test 2880K passed!
+Self-test 3072K passed!
+Self-test 25600K passed!
+[Wed Mar  5 07:40:19 2025]
+Self-test 3200K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+Self-test 3584K passed!
+[Wed Mar  5 07:41:39 2025]
+Self-test 26880K passed!
+Self-test 3840K passed!
+Self-test 4096K passed!
+Self-test 4480K passed!
+[Wed Mar  5 07:42:59 2025]
+Self-test 4608K passed!
+Self-test 27648K passed!
+Self-test 4800K passed!
+[Wed Mar  5 07:44:14 2025]
+Self-test 5120K passed!
+Self-test 5376K passed!
+Self-test 5600K passed!
+[Wed Mar  5 07:45:34 2025]
+Self-test 28672K passed!
+Self-test 5760K passed!
+Self-test 6144K passed!
+[Wed Mar  5 07:46:37 2025]
+Self-test 6400K passed!
+Self-test 30720K passed!
+Self-test 6720K passed!
+[Wed Mar  5 07:47:45 2025]
+Self-test 6912K passed!
+Self-test 7168K passed!
+Self-test 7680K passed!
+Self-test 32000K passed!
+[Wed Mar  5 07:49:00 2025]
+Self-test 8000K passed!
+Self-test 8192K passed!
+Self-test 8960K passed!
+Self-test 9216K passed!
+[Wed Mar  5 07:50:19 2025]
+Self-test 32768K passed!
+Self-test 9600K passed!
+Self-test 10240K passed!
+[Wed Mar  5 07:51:30 2025]
+Self-test 10752K passed!
+Self-test 4K passed!
+Self-test 11200K passed!
+[Wed Mar  5 07:52:42 2025]
+Self-test 11520K passed!
+Self-test 12288K passed!
+Self-test 12800K passed!
+[Wed Mar  5 07:53:59 2025]
+Self-test 5K passed!
+Self-test 13440K passed!
+Self-test 13824K passed!
+[Wed Mar  5 07:55:20 2025]
+Self-test 14336K passed!
+Self-test 15360K passed!
+Self-test 6K passed!
+[Wed Mar  5 07:56:34 2025]
+Self-test 16000K passed!
+Self-test 16384K passed!
+Self-test 17920K passed!
+[Wed Mar  5 07:58:07 2025]
+Self-test 18432K passed!
+Self-test 8K passed!
+Self-test 19200K passed!
+[Wed Mar  5 07:59:40 2025]
+Self-test 20480K passed!
+Self-test 21504K passed!
+Self-test 10K passed!
+[Wed Mar  5 08:00:56 2025]
+Self-test 22400K passed!
+Self-test 23040K passed!
+Self-test 24576K passed!
+[Wed Mar  5 08:02:26 2025]
+Self-test 25600K passed!
+Self-test 12K passed!
+Self-test 26880K passed!
+[Wed Mar  5 08:03:47 2025]
+Self-test 27648K passed!
+Self-test 28672K passed!
+Self-test 30720K passed!
+[Wed Mar  5 08:05:03 2025]
+Self-test 14K passed!
+Self-test 32000K passed!
+[Wed Mar  5 08:06:04 2025]
+Self-test 32768K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+Self-test 16K passed!
+[Wed Mar  5 08:07:20 2025]
+Self-test 6K passed!
+Self-test 8K passed!
+Self-test 10K passed!
+[Wed Mar  5 08:08:21 2025]
+Self-test 20K passed!
+Self-test 12K passed!
+Self-test 14K passed!
+[Wed Mar  5 08:09:22 2025]
+Self-test 16K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 24K passed!
+[Wed Mar  5 08:10:38 2025]
+Self-test 28K passed!
+Self-test 32K passed!
+Self-test 40K passed!
+Self-test 28K passed!
+[Wed Mar  5 08:11:54 2025]
+Self-test 48K passed!
+Self-test 56K passed!
+Self-test 64K passed!
+Self-test 32K passed!
+[Wed Mar  5 08:13:05 2025]
+Self-test 72K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 96K passed!
+[Wed Mar  5 08:14:16 2025]
+Self-test 40K passed!
+Self-test 112K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+[Wed Mar  5 08:15:25 2025]
+Self-test 160K passed!
+Self-test 48K passed!
+Self-test 192K passed!
+Self-test 224K passed!
+[Wed Mar  5 08:16:36 2025]
+Self-test 240K passed!
+Self-test 256K passed!
+Self-test 56K passed!
+Self-test 288K passed!
+[Wed Mar  5 08:17:48 2025]
+Self-test 320K passed!
+Self-test 336K passed!
+Self-test 64K passed!
+Self-test 384K passed!
+[Wed Mar  5 08:18:56 2025]
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 480K passed!
+Self-test 72K passed!
+[Wed Mar  5 08:20:04 2025]
+Self-test 512K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 640K passed!
+[Wed Mar  5 08:21:14 2025]
+Self-test 80K passed!
+Self-test 672K passed!
+Self-test 720K passed!
+Self-test 768K passed!
+[Wed Mar  5 08:22:28 2025]
+Self-test 84K passed!
+Self-test 800K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+[Wed Mar  5 08:23:39 2025]
+Self-test 1024K passed!
+Self-test 96K passed!
+Self-test 1120K passed!
+Self-test 1152K passed!
+[Wed Mar  5 08:24:49 2025]
+Self-test 1200K passed!
+Self-test 1280K passed!
+Self-test 112K passed!
+Self-test 1344K passed!
+[Wed Mar  5 08:26:00 2025]
+Self-test 1440K passed!
+Self-test 1536K passed!
+Self-test 1600K passed!
+Self-test 128K passed!
+[Wed Mar  5 08:27:12 2025]
+Self-test 1680K passed!
+Self-test 1728K passed!
+Self-test 1792K passed!
+Self-test 144K passed!
+[Wed Mar  5 08:28:23 2025]
+Self-test 1920K passed!
+Self-test 2048K passed!
+Self-test 2240K passed!
+Self-test 2304K passed!
+[Wed Mar  5 08:29:34 2025]
+Self-test 160K passed!
+Self-test 2400K passed!
+Self-test 2560K passed!
+Self-test 2688K passed!
+[Wed Mar  5 08:30:46 2025]
+Self-test 2800K passed!
+Self-test 192K passed!
+Self-test 2880K passed!
+Self-test 3072K passed!
+[Wed Mar  5 08:31:59 2025]
+Self-test 3200K passed!
+Self-test 224K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+[Wed Mar  5 08:33:11 2025]
+Self-test 3584K passed!
+Self-test 3840K passed!
+Self-test 240K passed!
+Self-test 4096K passed!
+[Wed Mar  5 08:34:27 2025]
+Self-test 4480K passed!
+Self-test 4608K passed!
+Self-test 4800K passed!
+[Wed Mar  5 08:35:31 2025]
+Self-test 256K passed!
+Self-test 5120K passed!
+Self-test 5376K passed!
+[Wed Mar  5 08:36:50 2025]
+Self-test 5600K passed!
+Self-test 5760K passed!
+Self-test 288K passed!
+[Wed Mar  5 08:38:03 2025]
+Self-test 6144K passed!
+Self-test 6400K passed!
+[Wed Mar  5 08:39:09 2025]
+Self-test 6720K passed!
+Self-test 320K passed!
+Self-test 6912K passed!
+[Wed Mar  5 08:40:37 2025]
+Self-test 7168K passed!
+Self-test 7680K passed!
+Self-test 8000K passed!
+[Wed Mar  5 08:41:41 2025]
+Self-test 336K passed!
+Self-test 8192K passed!
+Self-test 8960K passed!
+[Wed Mar  5 08:42:53 2025]
+Self-test 9216K passed!
+Self-test 9600K passed!
+Self-test 384K passed!
+[Wed Mar  5 08:44:08 2025]
+Self-test 10240K passed!
+Self-test 10752K passed!
+Self-test 11200K passed!
+[Wed Mar  5 08:45:19 2025]
+Self-test 11520K passed!
+Self-test 400K passed!
+Self-test 12288K passed!
+Self-test 12800K passed!
+[Wed Mar  5 08:46:44 2025]
+Self-test 13440K passed!
+Self-test 448K passed!
+Self-test 13824K passed!
+[Wed Mar  5 08:47:51 2025]
+Self-test 14336K passed!
+Self-test 15360K passed!
+Self-test 16000K passed!
+Self-test 480K passed!
+[Wed Mar  5 08:49:03 2025]
+Self-test 16384K passed!
+Self-test 17920K passed!
+Self-test 18432K passed!
+[Wed Mar  5 08:50:12 2025]
+Self-test 19200K passed!
+Self-test 512K passed!
+Self-test 20480K passed!
+[Wed Mar  5 08:51:19 2025]
+Self-test 21504K passed!
+Self-test 22400K passed!
+Self-test 560K passed!
+[Wed Mar  5 08:52:27 2025]
+Self-test 23040K passed!
+Self-test 24576K passed!
+Self-test 25600K passed!
+[Wed Mar  5 08:53:40 2025]
+Self-test 26880K passed!
+Self-test 576K passed!
+Self-test 27648K passed!
+[Wed Mar  5 08:54:49 2025]
+Self-test 28672K passed!
+Self-test 30720K passed!
+Self-test 32000K passed!
+[Wed Mar  5 08:55:57 2025]
+Self-test 640K passed!
+Self-test 32768K passed!
+Self-test 4K passed!
+Self-test 5K passed!
+[Wed Mar  5 08:57:13 2025]
+Self-test 6K passed!
+Self-test 672K passed!
+Self-test 8K passed!
+[Wed Mar  5 08:58:16 2025]
+Self-test 10K passed!
+Self-test 12K passed!
+Self-test 720K passed!
+Self-test 14K passed!
+[Wed Mar  5 08:59:35 2025]
+Self-test 16K passed!
+Self-test 20K passed!
+Self-test 24K passed!
+Self-test 768K passed!
+[Wed Mar  5 09:00:50 2025]
+Self-test 28K passed!
+Self-test 32K passed!
+Self-test 40K passed!
+Self-test 48K passed!
+[Wed Mar  5 09:02:06 2025]
+Self-test 800K passed!
+Self-test 56K passed!
+Self-test 64K passed!
+Self-test 72K passed!
+[Wed Mar  5 09:03:19 2025]
+Self-test 896K passed!
+Self-test 80K passed!
+Self-test 84K passed!
+Self-test 96K passed!
+[Wed Mar  5 09:04:31 2025]
+Self-test 112K passed!
+Self-test 960K passed!
+Self-test 128K passed!
+Self-test 144K passed!
+[Wed Mar  5 09:05:40 2025]
+Self-test 160K passed!
+Self-test 192K passed!
+Self-test 1024K passed!
+Self-test 224K passed!
+[Wed Mar  5 09:06:52 2025]
+Self-test 240K passed!
+Self-test 256K passed!
+Self-test 288K passed!
+Self-test 1120K passed!
+[Wed Mar  5 09:08:01 2025]
+Self-test 320K passed!
+Self-test 336K passed!
+Self-test 384K passed!
+Self-test 1152K passed!
+[Wed Mar  5 09:09:15 2025]
+Self-test 400K passed!
+Self-test 448K passed!
+Self-test 480K passed!
+Self-test 512K passed!
+[Wed Mar  5 09:10:26 2025]
+Self-test 1200K passed!
+Self-test 560K passed!
+Self-test 576K passed!
+Self-test 640K passed!
+[Wed Mar  5 09:11:42 2025]
+Self-test 672K passed!
+Self-test 1280K passed!
+Self-test 720K passed!
+Self-test 768K passed!
+[Wed Mar  5 09:12:56 2025]
+Self-test 800K passed!
+Self-test 1344K passed!
+Self-test 896K passed!
+Self-test 960K passed!
+[Wed Mar  5 09:14:12 2025]
+Self-test 1024K passed!
+Self-test 1120K passed!
+Self-test 1440K passed!
+[Wed Mar  5 09:15:13 2025]
+Self-test 1152K passed!
+Self-test 1200K passed!
+Self-test 1280K passed!
+Self-test 1344K passed!
+[Wed Mar  5 09:16:29 2025]
+Self-test 1536K passed!
+Self-test 1440K passed!
+Self-test 1536K passed!
+Self-test 1600K passed!
+[Wed Mar  5 09:17:43 2025]
+Self-test 1680K passed!
+Self-test 1600K passed!
+Self-test 1728K passed!
+Self-test 1792K passed!
+[Wed Mar  5 09:18:57 2025]
+Self-test 1920K passed!
+Self-test 1680K passed!
+Self-test 2048K passed!
+Self-test 2240K passed!
+[Wed Mar  5 09:20:09 2025]
+Self-test 2304K passed!
+Self-test 2400K passed!
+Self-test 1728K passed!
+Self-test 2560K passed!
+[Wed Mar  5 09:21:20 2025]
+Self-test 2688K passed!
+Self-test 2800K passed!
+Self-test 2880K passed!
+Self-test 1792K passed!
+[Wed Mar  5 09:22:34 2025]
+Self-test 3072K passed!
+Self-test 3200K passed!
+Self-test 3360K passed!
+Self-test 3456K passed!
+[Wed Mar  5 09:23:47 2025]
+Self-test 1920K passed!
+Self-test 3584K passed!
+Self-test 3840K passed!
+Self-test 4096K passed!
+[Wed Mar  5 09:25:01 2025]
+Self-test 2048K passed!
+Self-test 4480K passed!
+Self-test 4608K passed!
+[Wed Mar  5 09:26:08 2025]
+Self-test 4800K passed!
+Self-test 5120K passed!
+Self-test 2240K passed!
+[Wed Mar  5 09:27:20 2025]
+Self-test 5376K passed!
+Self-test 5600K passed!
+Self-test 5760K passed!
+[Wed Mar  5 09:28:46 2025]
+Self-test 6144K passed!
+Self-test 2304K passed!
+Self-test 6400K passed!
+[Wed Mar  5 09:30:09 2025]
+Self-test 6720K passed!
+Self-test 6912K passed!
+Self-test 2400K passed!
+[Wed Mar  5 09:31:38 2025]
+Self-test 7168K passed!
+Self-test 7680K passed!
+Self-test 8000K passed!
+Self-test 8192K passed!
+[Wed Mar  5 09:32:50 2025]
+Self-test 2560K passed!
+Self-test 8960K passed!
+Self-test 9216K passed!
+[Wed Mar  5 09:33:52 2025]
+Self-test 9600K passed!
+Self-test 10240K passed!
+Self-test 2688K passed!
+[Wed Mar  5 09:35:02 2025]
+Self-test 10752K passed!

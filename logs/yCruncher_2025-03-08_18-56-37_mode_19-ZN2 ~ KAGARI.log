@@ -1,0 +1,54 @@
+
+
+2025-03-08 18:56:42
+
+Checking processor/OS features...
+
+Required Features:
+    x64, ABM, BMI1, BMI2, ADX,
+    SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2,
+    AVX, FMA3, AVX2
+
+
+
+Parsing Core -> Handle Mappings...
+    Cores:  0-31 
+
+Parsing NUMA -> Core Mappings...
+    Node  0:  0-31 
+
+Parsing Processor Group -> Core Mappings...
+    Group  0:  0-31 
+
+
+
+Component Stress Tester
+
+  1   Logical Cores:      1
+  2   Memory:             12.8 MiB  ( 12.8 MiB per thread )
+  3   NUMA Mode:          Local - Memory allocated from local thread.
+  4/5 Time Limit:         60 seconds per test / Run Forever
+  6   Stop on Error:      Disabled
+
+ 7/8  Enable All Tests / Disable All Tests
+ 9/10 Load/Save Configuration File
+
+  #  Tag   Test Name                   Mem/Thread  Component      CPU------Mem
+ 11  BKT   Basecase + Karatsuba          Disabled  Scalar Integer  -|--------
+ 12  BBP   BBP Digit Extraction          Disabled  AVX2 Float      |---------
+ 13  SFT   Small In-Cache FFTv3          Disabled  AVX2 Float      -|--------
+ 14  SFTv4 Small In-Cache FFTv4           237 KiB  AVX2 Float      -|--------
+ 15  SNT   Small In-Cache N63            Disabled  AVX2 Integer    --|-------
+ 16  SVT   Small In-Cache VT3            Disabled  AVX2 Float      --|-------
+ 17  FFT   Fast Fourier Transform (v3)   Disabled  AVX2 Float      ---------|
+ 18  FFTv4 Fast Fourier Transform (v4)   Disabled  AVX2 Float      ---------|
+ 19  N63   Classic NTT (v2)              Disabled  AVX2 Integer    ---|------
+ 20  VT3   Vector Transform (v3)         Disabled  AVX2 Float      ----|-----
+
+  0   Start Stress-Testing!
+
+Allocating Memory...
+  Core   2:   237 KiB  node 0 (100%)
+
+Iteration: 0  Total Elapsed Time: 0.003 seconds  ( 0.000 minutes )
+                                                                               Running SFTv4: 

@@ -1,0 +1,23 @@
+22:00:06
+[CoreCycler] Linpack v2018 - MEDIUM - 1 Thread - 2000000000 bytes
+
+Current date/time: Sun Mar 23 22:00:06 2025
+
+CPU frequency:    4.748 GHz
+Number of CPUs: 1
+Number of cores: 16
+Number of threads: 1
+
+Parameters are set to:
+
+Number of tests: 1
+
+Number of equations to solve (problem size) : 15811
+Leading dimension of array                  : 15816
+Number of trials to run                     : 9999999
+Data alignment value (in Kbytes)            : 4    
+Maximum memory requested that can be used=2000854624, at the size=15811
+
+=================== Timing linear equation system solver ===================
+
+Size   LDA    Align. Time(s)    GFlops   Residual     Residual(norm) Check
