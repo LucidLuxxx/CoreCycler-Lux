@@ -1,1 +1,0 @@
-checkBox_29 through checkBox_38 are currently set to change the value of the "tests" setting under the [ycruncher] section of the config.ini file. I want to only use those values of checkBox_29 through checkBox_38 if radioButton_4 is selected. 
